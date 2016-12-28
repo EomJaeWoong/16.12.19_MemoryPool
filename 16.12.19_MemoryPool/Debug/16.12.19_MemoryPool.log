@@ -1,0 +1,23 @@
+﻿빌드 시작: 2016-12-28 오전 9:44:48
+     1>2 노드의 "C:\Users\EomJaeWoong\Documents\Visual Studio 2013\Projects\16.12.19_MemoryPool\16.12.19_MemoryPool\16.12.19_MemoryPool.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt test.cpp
+         test.cpp
+     1>c:\users\eomjaewoong\documents\visual studio 2013\projects\16.12.19_memorypool\16.12.19_memorypool\lockfreestack.h(100): error C3861: 'InterlockedCompareExchange128': 식별자를 찾을 수 없습니다.
+                 c:\users\eomjaewoong\documents\visual studio 2013\projects\16.12.19_memorypool\16.12.19_memorypool\lockfreestack.h(89) : 클래스 템플릿 멤버 함수 'bool CLockfreeStack<CMemoryPool<int>::st_BLOCK_NODE *>::Push(DATA)'을(를) 컴파일하고 있습니다.
+                 with
+                 [
+                     DATA=CMemoryPool<int>::st_BLOCK_NODE *
+                 ]
+                 c:\users\eomjaewoong\documents\visual studio 2013\projects\16.12.19_memorypool\16.12.19_memorypool\memorypool.h(153) : 컴파일 중인 함수 템플릿 인스턴스화 'bool CLockfreeStack<CMemoryPool<int>::st_BLOCK_NODE *>::Push(DATA)'에 대한 참조를 확인하십시오.
+                 with
+                 [
+                     DATA=CMemoryPool<int>::st_BLOCK_NODE *
+                 ]
+                 c:\users\eomjaewoong\documents\visual studio 2013\projects\16.12.19_memorypool\16.12.19_memorypool\memorypool.h(170) : 컴파일 중인 클래스 템플릿 인스턴스화 'CLockfreeStack<CMemoryPool<int>::st_BLOCK_NODE *>'에 대한 참조를 확인하십시오.
+                 c:\users\eomjaewoong\documents\visual studio 2013\projects\16.12.19_memorypool\16.12.19_memorypool\test.cpp(6) : 컴파일 중인 클래스 템플릿 인스턴스화 'CMemoryPool<int>'에 대한 참조를 확인하십시오.
+     1>"C:\Users\EomJaeWoong\Documents\Visual Studio 2013\Projects\16.12.19_MemoryPool\16.12.19_MemoryPool\16.12.19_MemoryPool.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:00.96
